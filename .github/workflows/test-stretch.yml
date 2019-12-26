@@ -7,10 +7,10 @@ jobs:
     steps:
     - name: Run some commands on arm64
       id: runcmd
-      uses: uraimo/run-on-arch-action@master
+      uses: chensheng0/run-on-arch-action@master
       with:
         architecture: aarch64
-        distribution: stetch
+        distribution: ubuntu18.04
         run: |
           go version
           echo ::set-output name=uname::$(go version)
