@@ -7,6 +7,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 		libc6-dev \
 		make \
 		pkg-config \
+		ca-certificates \
 		wget \
 	&& rm -rf /var/lib/apt/lists/*
 
