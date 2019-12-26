@@ -10,7 +10,7 @@ jobs:
       uses: chensheng0/run-on-arch-action@master
       with:
         architecture: aarch64
-        distribution: stretch
+        distribution: ubuntu18.04
         run: |
           go version
           echo ::set-output name=uname::$(go version)
